@@ -4,6 +4,7 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Software License][ico-license]][link-license]
 
+![filament-laravel-pulse-v3](https://github.com/dotswan/filament-laravel-pulse/assets/20874565/e0d40daa-a06c-4e46-813e-1ebc0f984b17)
 
 
 ## Introduction
