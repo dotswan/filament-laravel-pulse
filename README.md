@@ -41,7 +41,7 @@ php artisan vendor:publish --provider="Dotswan\FilamentLaravelPulse\FilamentLara
 
 To start using Filament Laravel Pulse, follow these steps:
 
-1. **Create a Custom Filament Page:** Extend the default Filament dashboard by creating a custom page. You can define your custom dashboard class and extend `app/Filament\Pages\Dashboard`.
+1. **Create a Custom Filament Page:** Extend the default Filament dashboard by creating a custom page. You can define your custom dashboard class and extend `app/Filament/Pages/Dashboard`.
 
 2. **Define Widgets:** Inside your custom dashboard class, define which widgets to include. Use the provided Pulse widgets (PulseCache, PulseExceptions, etc.) to display relevant metrics.
 
