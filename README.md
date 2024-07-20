@@ -24,8 +24,16 @@ Filament Laravel Pulse offers the following features:
 
 ## Installation
 
-To integrate the Filament Laravel Pulse package into your project, use Composer:
+To integrate the Filament Laravel Pulse package into your project, follow these steps:
 
+**Install Pulse:**
+```bash
+composer require laravel/pulse
+php artisan vendor:publish --provider="Laravel\Pulse\PulseServiceProvider"
+php artisan migrate --step
+```
+
+**Install Filament Laravel Pulse:**
 ```bash
 composer require dotswan/filament-laravel-pulse
 ```
