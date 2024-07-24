@@ -12,6 +12,7 @@ use Dotswan\FilamentLaravelPulse\Widgets\PulseSlowOutGoingRequests;
 use Dotswan\FilamentLaravelPulse\Widgets\PulseSlowQueries;
 use Dotswan\FilamentLaravelPulse\Widgets\PulseSlowRequests;
 use Dotswan\FilamentLaravelPulse\Widgets\PulseUsage;
+use Dotswan\FilamentLaravelPulse\Widgets\PulseSlowJobs;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Js;
 use Filament\Support\Facades\FilamentAsset;
@@ -128,5 +129,6 @@ class FilamentLaravelPulseServiceProvider extends PackageServiceProvider
         Livewire::component('dotswan.filament-laravel-pulse.widgets.pulse-slow-queries', PulseSlowQueries::class);
         Livewire::component('dotswan.filament-laravel-pulse.widgets.pulse-slow-requests', PulseSlowRequests::class);
         Livewire::component('dotswan.filament-laravel-pulse.widgets.pulse-usage', PulseUsage::class);
+        Livewire::component('dotswan.filament-laravel-pulse.widgets.pulse-slow-jobs', PulseSlowJobs::class);
     }
 }

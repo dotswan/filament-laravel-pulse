@@ -115,5 +115,19 @@ return [
             'canView' => true,
             'columnStart' => [],
         ],
+
+        'slow-jobs' => [
+            'columnSpan' => [
+                'md' => 5,
+                'xl' => 5,
+            ],
+            'cols' => 'full',
+            'ignoreAfter' => '1 day',
+            'isDiscovered' => true,
+            'isLazy' => true,
+            'sort' => null,
+            'canView' => true,
+            'columnStart' => [],
+        ],
     ],
 ];
