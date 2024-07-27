@@ -45,6 +45,25 @@ After installing the package, publish the configuration file using Artisan:
 php artisan vendor:publish --provider="Dotswan\FilamentLaravelPulse\FilamentLaravelPulseServiceProvider"
 ```
 
+**Extra Configuration:**
+Since Laravel Pulse uses Tailwind CSS custom stylesheets, it is necessary to register the CSS files to resolve display issues. So, don't forget to add the CSS file to the content array. To do this, you need to add this directory into the `content` array of `tailwind.config.js` file :
+```
+export default {
+    content: [
+        // ...
+        './vendor/laravel/pulse/resources/views/**/*.blade.php', // Add this line
+    ],
+    // ...
+}
+```
+
+after update `tailwind.config.js` run this command:
+
+```bash
+npm install
+npm run build
+```
+
 ## Basic Usage
 
 To start using Filament Laravel Pulse, follow these steps:
