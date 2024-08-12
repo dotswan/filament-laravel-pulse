@@ -14,6 +14,7 @@ use Dotswan\FilamentLaravelPulse\Widgets\PulseSlowRequests;
 use Dotswan\FilamentLaravelPulse\Widgets\PulseUsage;
 use Dotswan\FilamentLaravelPulse\Widgets\PulseSlowJobs;
 use Filament\Support\Assets\Asset;
+use Filament\Support\Assets\Css;
 use Filament\Support\Assets\Js;
 use Filament\Support\Facades\FilamentAsset;
 use Livewire\Livewire;
@@ -73,6 +74,7 @@ class FilamentLaravelPulseServiceProvider extends PackageServiceProvider
     protected function getAssets(): array
     {
         return [
+            Css::make('filament-laravel-pulse', __DIR__.'/../resources/dist/css/filament-grapesjs.css'),
             Js::make('filament-laravel-pulse', __DIR__.'/../resources/dist/js/filament-laravel-pulse.js'),
         ];
     }
