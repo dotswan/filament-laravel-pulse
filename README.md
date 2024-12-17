@@ -57,6 +57,8 @@ To start using Filament Laravel Pulse, follow these steps:
 
 <?php
 
+namespace App\Filament\Pages;
+
 use Dotswan\FilamentLaravelPulse\Widgets\PulseCache;
 use Dotswan\FilamentLaravelPulse\Widgets\PulseExceptions;
 use Dotswan\FilamentLaravelPulse\Widgets\PulseQueues;
