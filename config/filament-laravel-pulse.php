@@ -121,6 +121,7 @@ return [
                 'md' => 5,
                 'xl' => 5,
             ],
+            'rows' => 2,
             'cols' => 'full',
             'ignoreAfter' => '1 day',
             'isDiscovered' => true,
