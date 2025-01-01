@@ -14,6 +14,8 @@ class PulseSlowJobs extends Widget
 
     protected string $ignoreAfter;
 
+    protected int $rows;
+
     public function __construct()
     {
         $config = config('filament-laravel-pulse.components.slow-jobs');
@@ -21,6 +23,7 @@ class PulseSlowJobs extends Widget
             'md' => 5,
             'xl' => 5,
         ];
+        $this->rows = $config['rows'] ?? 2;
         $this->cols = $config['cols'] ?? 'full';
         $this->ignoreAfter = $config['ignoreAfter'] ?? '1 hour';
         self::$isDiscovered = $config['isDiscovered'] ?? true;
