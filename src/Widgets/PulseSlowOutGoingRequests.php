@@ -16,7 +16,7 @@ class PulseSlowOutGoingRequests extends Widget
 
     public function __construct()
     {
-        $config = config('filament-laravel-pulse.components.slow-out-going-requests');
+        $config = config('filament-laravel-pulse.components.slow-out-going-requests') ?? config('filament-laravel-pulse.components.slow-out-going');
         $this->columnSpan = $config['columnSpan'] ?? [
             'md' => 5,
             'xl' => 5,

@@ -62,7 +62,7 @@ return [
             'columnStart' => [],
         ],
 
-        'slow-out-going' => [
+        'slow-out-going-requests' => [
             'columnSpan' => 'full',
             'cols' => 'full',
             'ignoreAfter' => '1 day',
